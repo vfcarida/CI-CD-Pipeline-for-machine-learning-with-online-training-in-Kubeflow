@@ -1,0 +1,24 @@
+apiVersion: machinelearning.seldon.io/v1alpha2
+kind: SeldonDeployment
+metadata:
+  name: avi-intencoes-model
+spec:
+  name: avi-intencoes
+  predictors:
+  - componentSpecs:
+    - spec:
+        containers:
+        - image: gcr.io/itau-avi-ml-pipeline/deploy_model:latest
+          name: classifier
+    graph:
+      children: []
+      endpoint:
+        type: REST
+      name: classifier
+      type: MODEL
+      parameters:
+      - type: STRING
+        name: pkl_path
+        value: fake.pkl
+    name: avi-intencoes-classifier-v07
+    replicas: 1

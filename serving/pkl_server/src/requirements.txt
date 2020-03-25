@@ -1,0 +1,13 @@
+dill==0.2.9
+numpy>=1.16.1
+pandas>=0.24.2
+scikit-learn>=0.21.2
+scipy>=0.13.3
+tqdm==4.32.1
+requests==2.21.0
+networkx>=2.2
+xlrd==1.2.0
+google-cloud-storage
+spacy==2.0.18
+seldon-core==0.2.7
+

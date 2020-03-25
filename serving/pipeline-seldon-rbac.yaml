@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: pipeline-seldon-rolebinding
+roleRef:
+  kind: Role
+  name: seldon-local
+subjects:
+  - kind: ServiceAccount
+    name: pipeline-runner
+

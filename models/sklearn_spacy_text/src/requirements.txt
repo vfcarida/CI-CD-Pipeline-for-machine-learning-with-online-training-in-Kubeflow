@@ -1,0 +1,7 @@
+scipy>=0.13.3
+scikit-learn>=0.21.2
+spacy==2.0.18
+dill==0.2.9
+seldon-core==0.2.7
+pandas>=0.24.2
+

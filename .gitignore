@@ -1,0 +1,6 @@
+**/*.pyc
+**/upload/**
+**/__pycache__/**
+**/*.pkl
+**/*.tar.gz
+
